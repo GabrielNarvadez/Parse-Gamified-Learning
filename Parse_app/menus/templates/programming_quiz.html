@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <title>Parse | Quiz</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<!-- QUIZ START -->
+    <h3>Programming Quiz</h3>
+    <!-- Programming Question should be here -->
+
+        <div>
+            <input type="button" id="answer1" name="answer1" value="A. {{ answer1 }}" />
+            <input type="button" id="answer2" name="answer2" value="B. {{ answer2 }}" />
+            <input type="button" id="answer3" name="answer3" value="C. {{ answer3 }}" />
+            <input type="button" id="answer4" name="answer4" value="D. {{ answer4 }}" /></div>
+
+        <div>
+            <button class="btn submit-btn">Submit Answer</button></div>
+    
+
+    <!-- i hope the logic makes sense -->
+    {% if answer == correct_answer %}
+        <h1>Good! Keep it Up!</h1>
+    {% else %}
+        <h1>
+            Wrong!
+            The correct answer was {{ correct_answer }}.
+    {% end if %}
+        </h1>
+<!-- QUIZ END -->
+</body>

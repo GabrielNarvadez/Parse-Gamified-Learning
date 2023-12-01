@@ -1,70 +1,402 @@
-{%load static%}
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="Specialties to Explore">
-    <meta name="description" content="">
-    <title>Parse | Home</title>
-    <link rel="icon" type="image/png" href="{% static 'images/P.png' %}"/>
-    <link rel="stylesheet" href={% static "css/nicepage.css" %} media="screen">
-    <link rel="stylesheet" href={% static "css/Home.css" %} media="screen">
+<html class="no-js" lang="zxx">
 
-    <script class="u-script" type="text/javascript" src={% static "javascript/jquery.js" %} defer=""></script>
-    <script class="u-script" type="text/javascript" src={% static "javascript/nicepage.js" %} defer=""></script>
-    <meta name="generator" content="Nicepage 6.0.3, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff:400">
+<head>
+    <title>Parse</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Goto TOP -->
+    <div id="top-btn">
+        <button class="btn top-btn"><i class="icofont-arrow-up"></i></button>
+    </div>
+
+    <!--HEADER PART START-->
+    <header>
+        <div class="header py-1">
+            <div class="container">
     
-      <script type="application/ld+json">{
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "name": "",
-      "logo": "images/P.png"
-    }</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Home">
-    <meta property="og:type" content="website">
-    <meta data-intl-tel-input-cdn-path="intlTelInput/">
-  </head>
-  <body data-home-page="./" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-white u-header" id="sec-6d77"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="u-image u-logo u-image-1" data-image-width="1024" data-image-height="1024">
-        <img src="{% static 'images/P.png' %}" class="u-logo-image u-logo-image-1">
-      </a><h2 class="u-custom-font u-text u-text-default u-text-1">Parse</h2><nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
-        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-            <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</g></svg>
-          </a>
-        </div>
-        <div class="u-custom-menu u-nav-container">
-          <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href= "/index" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/courses" style="padding: 10px 20px;">Courses</a>
-</li></ul>
-        </div>
-        <div class="u-custom-menu u-nav-container-collapse">
-          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-            <div class="u-inner-container-layout u-sidenav-overflow">
-              <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/index">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/courses">Courses</a>
-</li></ul>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="account.html">Account</a>
+                </li>
+    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="help.html">Contact and Support</a>
+                </li>
+    
             </div>
-          </div>
-          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
         </div>
-      </nav><div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div></header> 
-    
-    
-    
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-8e5e"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">Damn Daniel, our html and css are working in Django!</p>
-      </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <p class="u-text">
-        <span>Jaunt Limited | Copyright 2023</span>
-      </p>
-    </section>
-  
-</body></html>
+    </header>
+    <!--HEADER PART END-->
+
+    <!--HOME HERO SECTION START-->
+    <div class="home-hero-section">
+        <div class="bubble">
+            <img src="img/bubble.png" alt="bubble-images " class="w-100 img-fluid" />
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="home-hero-content">
+                        <h1>Regale in the <strong>World</strong> of <strong>Wisdom</strong> <span>Now!</span></h1>
+                        <p>Eager to Learn?<span> <a href="contact.html">Get started here!</a></span></p>
+                        <a class="btn menu-btn" href="#courses">Our Courses <i class="icofont-double-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="burger-img">
+                        <img src="img/Course-example.png" class="w-100 img-fluid" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--HOME HERO SECTION END-->
+
+    <!--SPECIAL SECTION START-->
+    <div class="special-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-5 col-lg-6 col-xl-6">
+                    <div class="special-img">
+                        <img src="img/Todayspecialimg.png" class="w-100" alt="" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6">
+                    <div class="special-content text-center">
+                        <div class="donut-icon m-auto">
+                            <img src="img/donut.png" class="w-100" alt="" />
+                        </div>
+                        <h2>
+                            Our Most
+                            <span>Popular</span>
+                            Course
+                        </h2>
+                        <p>
+                            Try our Programming course Now!
+                            <span> It is our fastest growing Course in terms of Popularity with our users!.</span>
+                        </p>
+                        <div class="offer-info">
+                            <div class="form-row justify-content-center align-items-center">
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="#" class="btn order-btn">Get Started!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SPECIAL SECTION END-->
+
+    <!--HOME SERVICES SECTION START-->
+    <div class="home-services-section">
+        <div class="container">
+            <div class="home-services">
+                <div class="form-row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="image-box clearfix">
+                            <div class="box-image float-left">
+                                <img src="img/honney.png" alt="" />
+                            </div>
+                            <div class="image-text float-left">
+                                <h2>Pick a Course</h2>
+                                <p>This is the description sample</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="image-box clearfix">
+                            <div class="box-image float-left">
+                                <img src="img/macaron.png" alt="" />
+                            </div>
+                            <div class="image-text float-left">
+                                <h2>Start Learning</h2>
+                                <p>This is the description sample</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="image-box clearfix">
+                            <div class="box-image float-left">
+                                <img src="img/dinner.png" alt="" />
+                            </div>
+                            <div class="image-text float-left">
+                                <h2>Gain Wisdom!</h2>
+                                <p>This is the description sample</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--HOME SERVICES SECTION END-->
+
+    <!--MENU SECTION START-->
+    <div class="course-section" id="courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="menu-head text-center">
+                        <h2>Our Offered <span>Courses</span></h2>
+                        <p>Pick any of the prepared Courses we've made and start today!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row course-box">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="course-menu text-center">
+                        <div class="course-img-info">
+                            <div class="course-img">
+                                <img src="img/course1.png" class="w-100" alt="" />
+                            </div>
+                            <div class="overlay text-left">
+                                <h4>Course Topics</h4>
+                                <span>main_topic1</span>
+                                <span>main_topic2</span>
+                                <span>main_topic3</span>
+                                <span>main_topic4</span>
+                            </div>
+                        </div>
+                        <div class="course-informaion">
+                            <div class="row align-items-center">
+                                <div class="col-12"><h2>Programming</h2></div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right">
+                                    <a href="#" class="btn order-btn2">Learn Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="course-menu text-center">
+                        <div class="course-img-info">
+                            <div class="course-img">
+                                <img src="img/course2.png" class="w-100" alt="" />
+                            </div>
+                            <div class="overlay text-left">
+                                <h4>Course Topics</h4>
+                                <span>main_topic1</span>
+                                <span>main_topic2</span>
+                                <span>main_topic3</span>
+                                <span>main_topic4</span>
+                            </div>
+                        </div>
+                        <div class="course-informaion">
+                            <div class="row align-items-center">
+                                <div class="col-12"><h2>Calculus</h2></div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right">
+                                    <a href="#" class="btn order-btn2">Learn Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="course-menu text-center">
+                        <div class="course-img-info">
+                            <div class="course-img">
+                                <img src="img/course3.png" class="w-100" alt="" />
+                            </div>
+                            <div class="overlay text-left">
+                                <h4>Course Topics</h4>
+                                <span>main_topic1</span>
+                                <span>main_topic2</span>
+                                <span>main_topic3</span>
+                                <span>main_topic4</span>
+                            </div>
+                        </div>
+                        <div class="course-informaion">
+                            <div class="row align-items-center">
+                                <div class="col-12"><h2>Physics</h2></div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right">
+                                    <a href="#" class="btn order-btn2">Learn Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="course-menu text-center">
+                        <div class="course-img-info">
+                            <div class="course-img">
+                                <img src="img/courseWIP.png" class="w-100" alt="" />
+                            </div>
+                            <div class="overlay text-left">
+                                <h4>Course Topics</h4>
+                                <span>WIP</span>
+                            </div>
+                        </div>
+                        <div class="course-informaion">
+                            <div class="row align-items-center">
+                                <div class="col-12"><h2>Course4</h2></div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right">
+                                    <a href="#" class="btn order-btn2">Learn Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="course-menu text-center">
+                        <div class="course-img-info">
+                            <div class="course-img">
+                                <img src="img/courseWIP.png" class="w-100" alt="" />
+                            </div>
+                            <div class="overlay text-left">
+                                <h4>Course Topics</h4>
+                                <span>WIP</span>
+                            </div>
+                        </div>
+                        <div class="course-informaion">
+                            <div class="row align-items-center">
+                                <div class="col-12"><h2>Course5</h2></div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right">
+                                    <a href="#" class="btn order-btn2">Learn Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="course-menu text-center">
+                        <div class="course-img-info">
+                            <div class="course-img">
+                                <img src="img/courseWIP.png" class="w-100" alt="" />
+                            </div>
+                            <div class="overlay text-left">
+                                <h4>Course Topics</h4>
+                                <span>WIP</span>
+                            </div>
+                        </div>
+                        <div class="course-informaion">
+                            <div class="row align-items-center">
+                                <div class="col-12"><h2>Course6</h2></div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right">
+                                    <a href="#" class="btn order-btn2">Learn Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--MENU SECTION END-->
+
+    <!--FOOTER TOP SECTION START-->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="footer-top-content">
+                        <div class="logo">
+                            <img src="img/logo.png" class="w-100 img-fluid" alt="" />
+                        </div>
+                        <p>If you are going to use a passage of need to be sure there isn't anything hidden in the middle text.</p>
+                        <span>If you are going to use a passage of need to be sure there isn't</span>
+                        <ul class="social-icon-list">
+                            <li>
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                            </li>
+                            <li class="social-icon custom-icon-pinterest">
+                                <a href="#"><i class="icofont-pinterest"></i></a>
+                            </li>
+                            <li class="social-icon custom-icon-dribbble">
+                                <a href="#"><i class="icofont-dribbble"></i></a>
+                            </li>
+                            <li class="social-icon custom-icon-twitter">
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="contact-content">
+                        <h3>Contact Us</h3>
+                        <img src="img/border.png" alt="" />
+                        <div class="contact-info d-flex align-items-center">
+                            <div class="icon"><i class="icofont-phone"></i></div>
+                            <div class="info">
+                                <a href="#">+880 659 468</a>
+                                <a href="#">02 697 86456</a>
+                            </div>
+                        </div>
+                        <div class="contact-info d-flex align-items-center">
+                            <div class="icon"><i class="icofont-email"></i></div>
+                            <div class="info">
+                                <a href="#">support@gmail.com</a>
+                                <a href="#">hotte24@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-info d-flex align-items-center">
+                            <div class="icon"><i class="icofont-google-map"></i></div>
+                            <div class="info">
+                                <a href="#">855 Road, Brooklyn Street New York 600, Wisconsin(WI)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER TOP SECTION END-->
+
+    <!--FOOTER BOTTOM START-->
+    <div class="footer-bootom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                    <div class="copyright-txt">
+                        <p>Copyright 2023. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                    <div class="terms">
+                        <span><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER BOTTOM END-->
+
+</body>
+</html>

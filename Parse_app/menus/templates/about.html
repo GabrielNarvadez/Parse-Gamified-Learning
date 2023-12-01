@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <title>Parse | About</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<!-- ABOUT START -->
+
+    <div>
+        <a class="nav-link" href="index.html">Return</a>
+    </div>
+
+    <h3>About</h3>
+
+    <ul>
+        {% for x in Members %}
+          <li>{{ x.firstname }} {{ x.lastname }}</li>
+        {% endfor %}
+      </ul>
+    
+</body>

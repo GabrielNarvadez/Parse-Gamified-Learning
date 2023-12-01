@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <title>Parse</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<!-- header bar here -->
+
+<!-- FINISHED-COURSES START -->
+    {% for course in courses-finished %}
+        - You have finished our {{ course }} Course!
+        <!-- image of course here -->
+    {% end for%}
+<!-- FINISHED-COURSES END -->
+    
+<!-- footer bar here -->
+</body>
