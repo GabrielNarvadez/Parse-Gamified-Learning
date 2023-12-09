@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html >
 
 <head>
     <title>Parse | Login</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
 
     <h3>Parse | Login</h3>
 
-        <div>
-            <input type="email" class="form-control custom-input" id="email" name="email" value="" placeholder="Email:" /></div>
-        <div>
-            <input type="password" class="form-control custom-input" id="password" name="password" value="" placeholder="Password:" /></div>
-        <div>
-            <button class="btn submit-btn">Login</button></div>
-        <div>
-            <button class="btn submit-btn">Sign-Up</button></div>
-
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Login">
+    </form>
+    
 </body>

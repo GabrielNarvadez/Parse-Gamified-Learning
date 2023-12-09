@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <title>Parse | Quiz</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<!-- QUIZ START -->
+    <h1>Python Quiz</h1>
+    <ul>
+        {% for quiz in quizzes %}
+            <li>{{ quiz.title }}
+                <ul>
+                    {% for question in quiz.question_set.all %}
+                        <li>
+                            {{ question.text }}
+                            {% if question.question_type == 'multiple_choice' %}
+                                <ul>
+                                    {% for choice in question.choice_set.all %}
+                                        <li>{{ choice.text }} - Correct: {{ choice.is_correct }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+    
+</ul>
+
+
+</body>
