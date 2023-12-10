@@ -128,7 +128,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
-LOGIN_REDIRECT_URL = 'courses'
+LOGIN_REDIRECT_URL = 'signup'
 # settings.py
 AUTH_USER_MODEL = 'menus.CustomUser'
 

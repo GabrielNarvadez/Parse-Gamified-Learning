@@ -1,20 +1,66 @@
 import logging
-from django.shortcuts import get_object_or_404, render, redirect
+from django.shortcuts import get_object_or_404, render, redirect, HttpResponse
 from django.http import HttpResponse, JsonResponse
 from django.template import loader
 from .forms import AccountForm, UserLoginForm
-from django.contrib.auth import authenticate, login
 from django.contrib import messages
 from .models import *
 import random
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth.decorators import login_required
+
 # Create your views here.
 
 
+@login_required(login_url='signup')
 
 def homepage(request):
     template = loader.get_template('Homepage.html')
     return HttpResponse(template.render())
     
+
+# Create your views here.
+
+def SignupPage(request):
+    if request.method == 'POST':
+        uname = request.POST.get('username')
+        email = request.POST.get('email')
+        pass1 = request.POST.get('password1')
+        pass2 = request.POST.get('password2')
+
+        if pass1 != pass2:
+            return HttpResponse("Your password and confirm password are not the same!!")
+        else:
+            my_user = CustomUser.objects.create_user(uname, email, pass1)  # Use the custom manager
+            my_user.save()
+            return redirect('login')
+
+    return render(request, 'signup.html')
+
+
+def LoginPage(request):
+    if request.method=='POST':
+        username=request.POST.get('username')
+        pass1=request.POST.get('pass')
+        user=authenticate(request,username=username,password=pass1)
+        if user is not None:
+            login(request,user)
+            return redirect('/')
+        else:
+            return HttpResponse ("Username or Password is incorrect!!!")
+
+    return render (request,'login.html')
+
+def LogoutPage(request):
+    logout(request)
+    return redirect('login')
+
+
+
+
+
+
 def courses(request):
     context = {'categories': Category.objects.all()}
 
@@ -85,40 +131,4 @@ def get_quiz(request):
         print(e)
         # Return an HttpResponse even in case of exception
         return HttpResponse("Something went wrong", status=500)
-
-
-def user_login(request):
-    if request.method == 'POST':
-        form = UserLoginForm(request, data=request.POST)
-        if form.is_valid():
-            username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
-            user = authenticate(username=username, password=password)
-            if user is not None:
-                login(request, user)
-                return render(request, 'courses.html')  # Redirect to a success page
-    else:
-        form = UserLoginForm()
-    return render(request, 'login.html', {'form': form})
-
-
-
-
-def createAccount(request):
-    if request.method == 'POST':
-        form = AccountForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('successful/')  # Redirect to a success page
-        else:
-            # The form is not valid. Print errors to console or pass them back to the template
-            print(form.errors)  # This line is for debugging purposes
-            return render(request, 'Account_Creation.html', {'form': form})
-    else:
-        form = AccountForm()
-        return render(request, 'Account_Creation.html', {'form': form})
-
-def question_list(request):
-    questions = Question.objects.all()
-    return render(request, 'question_list.html', {'questions': questions})
 
